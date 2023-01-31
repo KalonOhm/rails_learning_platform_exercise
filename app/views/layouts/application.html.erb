@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsLearningPlatformExercise</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <header>
+      <%= render 'shared/nav' %>
+      <br>
+      <br>
+
+    </header>
+    <%= yield %>
+    <footer>
+    <hr>
+      <span>Copyright 2023 - <a href="#">Kalon Ohmstede</a> - <a href="https://www.github.com/KalonOhm">GitHub</a> - <a href="https://www.linkedin.com/in/kalonohmstede/">LinkedIn</a> </span>
+    </footer>
+  </body>
+</html>
